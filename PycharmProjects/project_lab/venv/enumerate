@@ -1,0 +1,9 @@
+l = ['a','b','c','d','e','f','g']
+for i,item in enumerate(l):
+    print(i,item)
+
+for i,item in enumerate(l):
+    if i>=4:
+        break
+    else:
+        print(item)
