@@ -1,0 +1,17 @@
+a = [2,4,5,7,8]
+b = [4,5,1,8,9]
+
+print(set(zip(a,b)))
+
+a = [1,2,3,5,6,8,5,6,9,3]
+b = [4,5,2,6,89,2,1,6,8,7]
+
+for pair in zip(a,b):
+    print(max(pair))
+
+print(set(map(lambda pair: max(pair),zip(a,b))))
+d1 = {'a':1,'b':4,'f':6}
+d2 = {'x':3,'y':6,'z':8}
+print(set(zip(d1,d2)))
+
+m= d1.itervalues()

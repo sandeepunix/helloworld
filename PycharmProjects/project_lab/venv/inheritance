@@ -1,0 +1,26 @@
+class  animal(object):
+    def _init_(self):
+        print("animal created")
+
+    def whoAmI(self):
+        print("animal")
+
+    def eat(self):
+        print("Eating")
+
+class dog(animal):
+    def _init_(self):
+        animal._init_(self)
+        print("dog created")
+
+    def whomAmI(self):
+        print("dog")
+
+    def bark(self):
+        print("woof!")
+
+d = dog()
+
+d.whoAmI()
+d.eat()
+d.bark()

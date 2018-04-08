@@ -1,0 +1,19 @@
+from functools import reduce
+l = [1,4,5,7,8,9,22]
+la = reduce(lambda x,y: x+y, l)
+print(la)
+
+l = [12,34,567,78,98,2324,65,68567]
+print(max(l))
+max = lambda x,y: x if (x>y) else y
+print(max(10,54))
+
+def max(x,y):
+    if x > y:
+        return x
+    else:
+        return y
+
+
+my = reduce(max,l)
+print(my)

@@ -1,0 +1,30 @@
+def fahrenheit(T):
+    return (9.0/5)*T +32
+
+print(fahrenheit(0))
+l = []
+temp = [0,22.5,40,100]
+l = map(fahrenheit,temp)
+result = set(l)
+print(result)
+
+l = map(lambda T: (9.0/5)*T + 32, temp)
+my = set(l)
+print(my)
+
+
+list = [3,6,7,2,9,4]
+k = map(lambda x: x**2, list)
+asn = set(k)
+print(asn)
+
+a = [1,4,7]
+b = [8,3,6]
+c = [3,8,9]
+n = map(lambda x,y,z: x+y+z, a,b,c)
+m = set(n)
+print(m)
+
+n = map(lambda x: x*-1, a)
+m = set(n)
+print(m)
