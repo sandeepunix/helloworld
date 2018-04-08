@@ -1,0 +1,17 @@
+class cylinder(object):
+    pi = 3.14
+
+    def __init__(self,height=1,radius=1):
+        self.height = height
+        self.radius = radius
+
+    def volume(self):
+        return (3.14)*(self.radius**2)*self.height
+
+    def suarea(self):
+        return 2*(3.14)*(self.radius**2)+2*(3.14)*self.radius*self.height
+
+
+dim = cylinder(3,15)
+print(dim.volume())
+print(dim.suarea())
